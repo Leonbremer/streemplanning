@@ -10,7 +10,7 @@ library(tidyverse)
 library(readxl)
 
 ### Setup
-setwd('C:/Users/abr448/Documents/VU/TSS/TSS2022-23')
+setwd('C:/Users/abr448/Documents/VU/TSS/TSS2023-24')
 
 ### Data
 tbl <- read_excel("data/gantt_dates.xlsx") %>%
