@@ -27,10 +27,10 @@ tbl <- read_excel("data/gantt_dates.xlsx") %>%
 ggplot(data = tbl,
        mapping = aes(x = Start, xend = End, y = Stage, yend = Stage,
                      color = Importance)) +
-  annotate('rect', xmin = as.Date('2023-01-01'), xmax = as.Date('2023-01-31'),
+  annotate('rect', xmin = as.Date('2024-01-01'), xmax = as.Date('2024-01-31'),
            ymin = .5, ymax = tbl$Stage %>% levels() %>% length() + .5,
            fill = '#6fb3e3', alpha = .35) +
-  annotate('rect', xmin = as.Date('2023-03-21'), xmax = as.Date('2023-06-30'),
+  annotate('rect', xmin = as.Date('2024-03-21'), xmax = as.Date('2024-06-30'),
            ymin = .5, ymax = tbl$Stage %>% levels() %>% length() + .5,
            fill = '#6fb3e3', alpha = .35) +
   geom_segment(size = 7) +
